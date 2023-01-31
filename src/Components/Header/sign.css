@@ -1,0 +1,21 @@
+
+.sign{
+    display: flex;
+    align-self: center;
+   
+}
+.sign a{
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+#signup{
+    color: #fff;
+    background-color: #2BD0D0;
+    padding: 9px 24px;
+    border-radius: 28px;
+    font-size: 15px;
+}
+.logo{
+    object-fit: contain;
+}
