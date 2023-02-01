@@ -2,14 +2,16 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-
 :root{
-    --header-background:#f2f2f2;
+    --header-background:#fff;
 }
+
+/* white header */
 .shortly_header{
     background-color:var(--header-background);
-    height: 600px;
-    padding-top: 30px;
+    height: 700px;
+    padding-top: 30px;       
+    position: relative;
 }
 .flex-text{
     display: flex;
@@ -35,4 +37,9 @@ body{
 .worker-img{
     width: 600px;
     object-fit: contain;
+}
+/* stats board */
+.statistics{
+background-color: #f2f2f2;
+height: 700px;
 }

@@ -1,0 +1,33 @@
+.form-space{
+    padding: 16px 32px;
+    width: 450px;
+    border-radius: 10px;
+    border: none;
+   
+}
+.form-background{
+    width: 700px;
+    padding:52px 64px;
+    background-image: url('../../../public/images/bg-shorten-desktop.svg');
+    background-color: #3A3054;
+    z-index: 1;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    left: 165px;
+    right: 165px;
+    top: 650px;
+
+   
+
+
+}
+button{
+    padding: 17px 40px;
+    background-color: #2BD0D0;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-left: 24px;
+}
