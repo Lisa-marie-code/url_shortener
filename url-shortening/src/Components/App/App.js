@@ -4,8 +4,8 @@ import { Header } from "../Header/header";
 import { Link } from "../Link/link";
 import {Card} from "../Card/card";
 import rec from "../../images/icon-brand-recognition.svg";
-import det from "../../images/icon-detailed-records.svg"
-import cus from "../../images/icon-fully-customizable.svg"
+import det from "../../images/icon-detailed-records.svg";
+import cus from "../../images/icon-fully-customizable.svg";
 
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
       <hr></hr>
       <div className="card-wrapper">
       <Card
+      id="card-1"
       img={rec} 
       title="Brand Recognition"
       description="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."
@@ -52,6 +53,10 @@ function App() {
       />
       </div>
      
+      </div>
+      <div className="boost_section">
+          <h1>Boost your links today </h1>
+          <a href="#">Get Started</a>
       </div>
     </div>
   );
