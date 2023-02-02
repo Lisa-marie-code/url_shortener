@@ -4,6 +4,10 @@ body {
 }
 :root {
   --header-background: #fff;
+  --primary-color:#2bd0d0;
+  --stats-background: #f2f2f2;
+  --booster-background: #3a3054;
+  --footer-background: #000;
 }
 
 /* white header */
@@ -18,9 +22,9 @@ body {
 }
 .flex-text a {
   padding: 14px 40px;
-  background-color: #2bd0d0;
+  background-color:var(--primary-color);
   text-decoration: none;
-  color: #fff;
+  color: var(--header-background);
   border-radius: 28px;
   margin-left: 5rem;
 }
@@ -44,12 +48,12 @@ hr {
   left: 400px;
   width: 600px;
   height: 10px;
-  background-color: #2bd0d0;
+  background-color: var(--primary-color);
   border: none;
 }
 .statistics {
   position: relative;
-  background-color: #f2f2f2;
+  background-color: var(--stats-background);
   height: 700px;
 }
 .statistics h4,
@@ -74,23 +78,23 @@ hr {
   flex-direction: column;
   height: 250px;
   background-image: url("../../../public/images/bg-boost-desktop.svg");
-  background-color: #3a3054;
-  color: #fff;
+  background-color: var(--booster-background);
+  color: var(--header-background);
 }
 .boost_section h1 {
   margin: 0;
 }
 .boost_section a {
   text-decoration: none;
-  color: #fff;
-  background-color: #2bd0d0;
+  color: var(--header-background);
+  background-color: var(--primary-color);
   padding: 14px 40px;
   border-radius: 28px;
 }
 
 /* footer */
 .footer{
-   background-color: #000;
+   background-color: var(--footer-background);
 }
 .footer h3{
     margin: 0;
