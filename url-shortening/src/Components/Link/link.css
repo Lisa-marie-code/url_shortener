@@ -6,7 +6,7 @@
    
 }
 .form-background{
-    width: 700px;
+    width: 1000px;
     padding:52px 64px;
     background-image: url('../../../public/images/bg-shorten-desktop.svg');
     background-color: #3A3054;
@@ -14,8 +14,8 @@
     border-radius: 10px;
     margin: auto;
     position: absolute;
-    left: 165px;
-    right: 165px;
+    left: 5rem;
+    right: 5rem;
     top: 650px;
 
    

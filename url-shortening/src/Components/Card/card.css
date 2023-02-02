@@ -1,0 +1,23 @@
+.card-wrapper{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.card-body{
+    background-color: #fff;
+    width: 350px;
+    border-radius: 5px;
+    margin-left: 30px;
+    position: relative;
+    padding: 20px;
+}
+.icon{
+    background-color: #3A3054;
+    padding: 10px;
+    border-radius:50%;
+    width: 40px;
+    position: absolute;
+    transform: translate(20px, -50px);
+}

@@ -43,3 +43,17 @@ body{
 background-color: #f2f2f2;
 height: 700px;
 }
+.statistics h4,.statistics h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.statistics h4{
+    width: 500px;
+    padding: 0 400px;
+
+}
+.statistics h2{
+    padding-top: 10%;
+}
