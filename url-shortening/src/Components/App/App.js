@@ -3,9 +3,11 @@ import ".//App.css";
 import { Header } from "../Header/header";
 import { Link } from "../Link/link";
 import {Card} from "../Card/card";
+import {Footer} from "../Footer/footer";
 import rec from "../../images/icon-brand-recognition.svg";
 import det from "../../images/icon-detailed-records.svg";
 import cus from "../../images/icon-fully-customizable.svg";
+import Logo from "../Header/logo";
 
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
       <h4>Track how your links are performing across the web with our advanced statistics dashboard.</h4>
       <hr></hr>
       <div className="card-wrapper">
+        
       <Card
       id="card-1"
       img={rec} 
@@ -57,6 +60,23 @@ function App() {
       <div className="boost_section">
           <h1>Boost your links today </h1>
           <a href="#">Get Started</a>
+      </div>
+      <div className="footer">
+        <Logo/>
+        <Footer
+        title="Features"
+        desc1="Link Shortening" desc2="Branded Links" desc3="Analytics"
+        />
+        <Footer
+        title="Resources"
+        desc1="Blog" desc2="Developers" desc3="Support"
+        />
+        <Footer
+        title="Company"
+        desc1="Our Team" desc2="Careers" desc3="Contact"
+        />
+
+        
       </div>
     </div>
   );

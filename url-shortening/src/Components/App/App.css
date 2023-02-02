@@ -87,3 +87,14 @@ hr {
   padding: 14px 40px;
   border-radius: 28px;
 }
+
+/* footer */
+.footer{
+   background-color: #000;
+}
+.footer h3{
+    margin: 0;
+}
+.footer ul li{
+    list-style: none;
+}
