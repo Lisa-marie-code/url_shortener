@@ -4,10 +4,17 @@ import { Header } from "../Header/header";
 import { Link } from "../Link/link";
 import {Card} from "../Card/card";
 import {Footer} from "../Footer/footer";
+import {Media} from "../Media/media";
 import rec from "../../images/icon-brand-recognition.svg";
 import det from "../../images/icon-detailed-records.svg";
 import cus from "../../images/icon-fully-customizable.svg";
+import facebook from "../../images/icon-facebook.svg";
+import twitter from "../../images/icon-twitter.svg";
+import pinterest from "../../images/icon-pinterest.svg";
+import instagram from "../../images/icon-instagram.svg";
+
 import Logo from "../Header/logo";
+
 
 
 function App() {
@@ -75,8 +82,11 @@ function App() {
         title="Company"
         desc1="Our Team" desc2="Careers" desc3="Contact"
         />
+<Media img={facebook}/>
+<Media img={twitter}/>
+<Media img={pinterest}/>
+<Media img={instagram}/>
 
-        
       </div>
     </div>
   );
