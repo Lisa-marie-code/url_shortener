@@ -2,12 +2,14 @@
 .sign{
     display: flex;
     align-self: center;
+    padding-left: 15rem;
    
 }
 .sign a{
     text-decoration: none;
     margin-left: 20px;
     padding: 10px;
+    color: #9E9AA8;
 }
 #signup{
     color: #fff;
@@ -18,4 +20,6 @@
 }
 .logo{
     object-fit: contain;
+padding-top: 5px;
+
 }
