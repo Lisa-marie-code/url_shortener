@@ -54,7 +54,7 @@ hr {
 .statistics {
   position: relative;
   background-color: var(--stats-background);
-  height: 700px;
+  height: 800px;
 }
 .statistics h4,
 .statistics h2 {
@@ -70,6 +70,7 @@ hr {
 .statistics h2 {
   padding-top: 10%;
 }
+
 /* boost */
 .boost_section {
   display: flex;
@@ -90,6 +91,7 @@ hr {
   background-color: var(--primary-color);
   padding: 14px 40px;
   border-radius: 28px;
+  margin-top: 20px;
 }
 
 /* footer */
