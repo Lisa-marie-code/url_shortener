@@ -2,6 +2,7 @@ import React from "react";
 import ".//App.css";
 import { Header } from "../Header/header";
 import { Link } from "../Link/link";
+import {Apple} from "../Link/link";
 import { Card } from "../Card/card";
 import { Footer } from "../Footer/footer";
 import { Media } from "../Media/media";
@@ -35,7 +36,9 @@ function App() {
             alt="worker"
           />
         </div>
-        <Link />
+        <Apple />
+        
+        
       </div>
       <div className="statistics">
         <h2>Advanced Statistics</h2>
