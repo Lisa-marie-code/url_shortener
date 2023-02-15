@@ -32,5 +32,14 @@ button{
 .result_div{
     width: 1000px;
     background-color: #3A3054;
-    
+
+}
+.result_div button.copied{
+    background-color: black;
+}
+.copy_button:focus{
+    background-color: #3A3054;
+}
+.copy_button:hover{
+    background-color: #9AE3E3;
 }

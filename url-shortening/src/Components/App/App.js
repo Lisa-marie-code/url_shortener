@@ -36,7 +36,7 @@ function App() {
             alt="worker"
           />
         </div>
-        <Apple />
+        <Link />
         
         
       </div>
