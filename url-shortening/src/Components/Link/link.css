@@ -1,45 +1,68 @@
+.form-space {
+  padding: 16px 32px;
+  width: 760px;
+  border-radius: 10px;
+  border: none;
+}
+.form-background {
+  width: 1000px;
+  padding: 52px 64px;
+  background-image: url("../../../public/images/bg-shorten-desktop.svg");
+  background-color: #3a3054;
+  z-index: 1;
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  left: 5rem;
+  right: 5rem;
+  top: 650px;
+}
+button {
+  padding: 17px 40px;
+  background-color: #2bd0d0;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-left: 24px;
+  cursor: pointer;
+}
+.result_div {
+  width: 1000px;
+  background-color: #3a3054;
+}
+.copy_button {
+  text-align: center;
+  padding: 10px 30px;
+}
+.copy_button:focus {
+  background-color: #3a3054;
+}
+.copy_button:hover {
+  background-color: #9ae3e3;
+}
+.result-container {
+  background-color: #fff;
+  width: 1060px;
+  margin: auto;
+  position: absolute;
+  top: 810px;
+  z-index: 1;
+  left: 5rem;
+  right: 5rem;
+  border-radius: 10px;
+  padding: 18px 32px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-.form-space{
-    padding: 16px 32px;
-    width: 760px;
-    border-radius: 10px;
-    border: none;
-   
+.results_container section {
+  display: flex;
+  justify-items: center;
 }
-.form-background{
-    width: 1000px;
-    padding:52px 64px;
-    background-image: url('../../../public/images/bg-shorten-desktop.svg');
-    background-color: #3A3054;
-    z-index: 1;
-    border-radius: 10px;
-    margin: auto;
-    position: absolute;
-    left: 5rem;
-    right: 5rem;
-    top: 650px;
-}
-button{
-    padding: 17px 40px;
-    background-color: #2BD0D0;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-weight: 700;
-    margin-left: 24px;
-    cursor: pointer;
-}
-.result_div{
-    width: 1000px;
-    background-color: #3A3054;
-
-}
-.result_div button.copied{
-    background-color: black;
-}
-.copy_button:focus{
-    background-color: #3A3054;
-}
-.copy_button:hover{
-    background-color: #9AE3E3;
+.short_link {
+  color: #2bd0d0;
+  padding-left: 35rem;
 }
