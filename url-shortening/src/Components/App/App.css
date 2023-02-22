@@ -8,6 +8,7 @@ body {
   --stats-background: #f2f2f2;
   --booster-background: #3a3054;
   --footer-background: #000;
+  --text-color:#9E9AA8;
 }
 
 /* white header */
@@ -41,6 +42,7 @@ body {
   width: 600px;
   object-fit: contain;
 }
+
 /* stats board */
 hr {
   position: absolute;
@@ -54,7 +56,7 @@ hr {
 .statistics {
   position: relative;
   background-color: var(--stats-background);
-  height: 800px;
+  /* height: 800px; */
 }
 .statistics h4,
 .statistics h2 {
@@ -107,4 +109,32 @@ hr {
 }
 .footer ul{
   padding: 0;
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+  .flex-text{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .flex-text h3{
+    text-align: center;
+    margin-left: 0;
+    font-size: 18px;
+    width: 327px;
+    margin: auto;
+    color:var(--text-color);
+  }
+  .large-text{
+    font-size: 42px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .worker-img{
+    width: 327px;
+    margin: auto;
+  }
+  .flex-text a{
+   margin-left: 89px;
+  
+  }
 }

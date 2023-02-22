@@ -14,3 +14,12 @@ nav{
     align-items: center;
     color: #9E9AA8;
 }
+
+@media screen and (min-width: 320px) and (max-width:480px){
+    nav a{
+      display: none;
+    }
+    a.links{
+        display: none;
+    }
+}

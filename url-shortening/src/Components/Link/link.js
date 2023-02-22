@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "../Link/link.css";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+
+
+
+
 
 export function Link() {
   const [inputValue, setInputValue] = useState("");
   const [results, setResults] = useState([]);
-  const [copyText, setCopyText] = useState("Copy");
+ const [copyText, setCopyText] = useState("Copy");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -17,22 +20,22 @@ export function Link() {
         `https://api.shrtco.de/v2/shorten?url=${inputValue}`
       );
       const data = await res.json();
-      console.log(data.result);
+      console.log(data);
       setResults(results.concat(data.result));
     };
     shortenLink();
   };
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(results.full_short_link);
+  const handleCopy = (res) => {
+    navigator.clipboard.writeText(res.full_short_link);
+    console.log(results);
     setCopyText("Copied!");
   };
+
 
   return (
     <div>
       <form
         className="form-background"
-        style={{ marginTop: 50 }}
         onSubmit={handleSubmit}
       >
         <input
@@ -46,21 +49,27 @@ export function Link() {
         <button onClick={handleSubmit} type="submit">
           Shorten it!
         </button>
+      
       </form>
-      {results.length &&
-        results.map((res, index) => (
-          <div key={index}>
-            <section>
-              <p>{res.original_link}</p>{" "}
-              <p className="short_link">{res.full_short_link}</p>
-              <button className="copy_button" onClick={handleCopy}>
-                {copyText}
-              </button>
-            </section>
-          </div>
-        ))}
+      <div className="shorten-background">
+      {
+      results.length > 0 &&
+      results.map((res, index) => (
+        <div key={index} className="results-display" >
+          <section>
+            <p>{res.original_link}</p>{" "}
+            <p className="short_link">{res.full_short_link}</p>
+            <button className="copy_button" onClick={handleCopy}>
+              {copyText}
+            </button>
+          </section>
+        </div>
+      ))
+       }
+      </div>
     </div>
   );
 }
 
 export default Link;
+

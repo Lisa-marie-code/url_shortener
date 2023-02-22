@@ -41,12 +41,10 @@ button {
 .copy_button:hover {
   background-color: #9ae3e3;
 }
-.result-container {
-  background-color: #fff;
+section {
+  background-color: #3a3054;
   width: 1060px;
   margin: auto;
-  position: absolute;
-  top: 810px;
   z-index: 1;
   left: 5rem;
   right: 5rem;
@@ -58,11 +56,23 @@ button {
   justify-content: space-between;
 }
 
-.results_container section {
-  display: flex;
-  justify-items: center;
+.results-display{
+  max-width: fit-content;
 }
+
 .short_link {
   color: #2bd0d0;
   padding-left: 35rem;
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+  .form-background {
+    width: 200px;
+    left: 2rem;
+  }
+
+  .form-space {
+    width: 180px;
+    margin: auto;
+  }
 }

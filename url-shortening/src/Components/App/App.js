@@ -13,6 +13,7 @@ import twitter from "../../images/icon-twitter.svg";
 import pinterest from "../../images/icon-pinterest.svg";
 import instagram from "../../images/icon-instagram.svg";
 
+
 import Logo from "../Header/logo";
 
 function App() {
@@ -36,11 +37,11 @@ function App() {
           />
         </div>
         <Link />
-        
-        
+       
         
       </div>
       <div className="statistics">
+    
         <h2>Advanced Statistics</h2>
         <h4>
           Track how your links are performing across the web with our advanced
