@@ -56,7 +56,7 @@ hr {
 .statistics {
   position: relative;
   background-color: var(--stats-background);
-  /* height: 800px; */
+  height: 800px;
 }
 .statistics h4,
 .statistics h2 {
@@ -135,6 +135,26 @@ hr {
   }
   .flex-text a{
    margin-left: 89px;
-  
+   position: absolute;
+ margin-top: 32px;
+  }
+  .shortly_header{
+    height: 740px;
+  }
+  .statistics h2 {
+    padding-top: 30%;
+    margin: 0;
+  }
+  .statistics{
+    height: 1500px;
+  }
+  .statistics h4 {
+   padding: 12px 0;
+  }
+  .boost_section h1{
+ font-size: 28px;
+  }
+  hr{
+    display: none;
   }
 }
