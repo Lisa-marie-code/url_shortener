@@ -5,6 +5,8 @@ import { Link } from "../Link/link";
 import { Card } from "../Card/card";
 import { Footer } from "../Footer/footer";
 import { Media } from "../Media/media";
+import {LargeText } from "../Maintext/maintext";
+import {Boost} from "../Maintext/boostext";
 import rec from "../../images/icon-brand-recognition.svg";
 import det from "../../images/icon-detailed-records.svg";
 import cus from "../../images/icon-fully-customizable.svg";
@@ -21,27 +23,10 @@ function App() {
     <div>
       <div className="shortly_header">
         <Header />
-        <div className="flex-text">
-          <div>
-            <h2 className="large-text">More than just shorter links</h2>
-            <h3>
-              Build your brand's recognition and get detailed insights on how
-              your links are performing
-            </h3>
-            <a href="/">Get Started</a>
-          </div>
-          <img
-            className="worker-img"
-            src="/images/illustration-working.svg"
-            alt="worker"
-          />
-        </div>
+       <LargeText/>
         <Link />
-       
-        
       </div>
       <div className="statistics">
-    
         <h2>Advanced Statistics</h2>
         <h4>
           Track how your links are performing across the web with our advanced
@@ -67,10 +52,7 @@ function App() {
           />
         </div>
       </div>
-      <div className="boost_section">
-        <h1>Boost your links today </h1>
-        <a href="/">Get Started</a>
-      </div>
+     <Boost/>
       <div className="footer">
         <Logo />
         <Footer
