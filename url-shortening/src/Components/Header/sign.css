@@ -1,4 +1,4 @@
-
+@import url('.//../App/App.css');
 .sign{
     display: flex;
     align-self: center;
@@ -9,19 +9,26 @@
     text-decoration: none;
     margin-left: 20px;
     padding: 10px;
-    color: #9E9AA8;
+    color: var(--text-color);
+}
+.sign a:hover{
+    color: var(--footer-background);
 }
 #signup{
-    color: #fff;
-    background-color: #2BD0D0;
+    color: var(--header-background);
+    background-color: var(--primary-color);
     padding: 9px 24px;
     border-radius: 28px;
     font-size: 15px;
+}
+#signup:hover{
+    background-color: var(--primary-hover);
 }
 .logo{
     object-fit: contain;
 padding-top: 5px;
 }
+
 @media screen and (min-width: 320px) and (max-width:480px) {
 .logo{
     width: 120px;

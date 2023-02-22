@@ -1,3 +1,5 @@
+@import url('.//../App/App.css');
+
 .form-space {
   padding: 16px 32px;
   width: 760px;
@@ -8,7 +10,7 @@
   width: 1000px;
   padding: 52px 64px;
   background-image: url("../../../public/images/bg-shorten-desktop.svg");
-  background-color: #3a3054;
+  background-color: var(--booster-background);
   z-index: 1;
   border-radius: 10px;
   margin: auto;
@@ -19,30 +21,33 @@
 }
 button {
   padding: 17px 40px;
-  background-color: #2bd0d0;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--header-background);
   border: none;
   border-radius: 10px;
   font-weight: 700;
   margin-left: 24px;
   cursor: pointer;
 }
+button:hover{
+  background-color: var(--primary-hover);
+}
 .result_div {
   width: 1000px;
-  background-color: #3a3054;
+  background-color: var(--booster-background);
 }
 .copy_button {
   text-align: center;
   padding: 10px 30px;
 }
 .copy_button:focus {
-  background-color: #3a3054;
+  background-color: var(--booster-background);
 }
 .copy_button:hover {
-  background-color: #9ae3e3;
+  background-color: var(--primary-hover);
 }
 section {
-  background-color: #3a3054;
+  background-color: #1f1538;
   width: 1060px;
   margin: auto;
   z-index: 1;
@@ -56,12 +61,10 @@ section {
   justify-content: space-between;
 }
 
-.results-display {
-  max-width: fit-content;
-}
+
 
 .short_link {
-  color: #2bd0d0;
+  color: var(--primary-color);
   padding-left: 35rem;
 }
 

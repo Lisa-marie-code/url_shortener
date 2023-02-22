@@ -1,3 +1,4 @@
+@import url('.//../App/App.css');
 .card-wrapper{
     display: flex;
     justify-content: center;
@@ -10,7 +11,7 @@
     margin-top: 60px;
 }
 .card-body{
-    background-color: #fff;
+    background-color:var(--header-background);
     width: 350px;
     border-radius: 5px;
     margin-left: 30px;
@@ -18,7 +19,7 @@
     padding: 20px;
 }
 .icon{
-    background-color: #3A3054;
+    background-color:var(--booster-background);
     padding: 10px;
     border-radius:50%;
     width: 40px;

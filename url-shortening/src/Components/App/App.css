@@ -9,6 +9,7 @@ body {
   --booster-background: #3a3054;
   --footer-background: #000;
   --text-color:#9E9AA8;
+  --primary-hover: #9AE3E3;
 }
 
 /* white header */
@@ -28,6 +29,9 @@ body {
   color: var(--header-background);
   border-radius: 28px;
   margin-left: 5rem;
+}
+.flex-text a:hover{
+  background-color: var(--primary-hover);
 }
 .flex-text h3 {
   margin-left: 5rem;
@@ -67,7 +71,7 @@ hr {
 }
 .statistics h4 {
   padding: 0 400px;
-  color: #9e9aa8;
+  color: var(--text-color);
 }
 .statistics h2 {
   padding-top: 10%;
@@ -95,7 +99,9 @@ hr {
   border-radius: 28px;
   margin-top: 20px;
 }
-
+.boost_section a:hover{
+  background-color: var(--primary-hover);
+}
 /* footer */
 .footer{
    background-color: var(--footer-background);

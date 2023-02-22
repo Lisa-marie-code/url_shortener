@@ -1,4 +1,5 @@
 import React from "react";
+import ".//media.css"
 
 
 export function Media(props){

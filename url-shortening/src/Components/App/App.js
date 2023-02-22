@@ -69,7 +69,7 @@ function App() {
       </div>
       <div className="boost_section">
         <h1>Boost your links today </h1>
-        <a href="#">Get Started</a>
+        <a href="/">Get Started</a>
       </div>
       <div className="footer">
         <Logo />

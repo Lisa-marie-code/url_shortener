@@ -1,3 +1,4 @@
+@import url('.//../App/App.css');
 nav{
     /* display: flex; */
   /* justify-content: space-around; */
@@ -12,7 +13,10 @@ nav{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: #9E9AA8;
+    color: var(--text-color);
+}
+a.links:hover{
+    color: var(--footer-background);
 }
 
 @media screen and (min-width: 320px) and (max-width:480px){
