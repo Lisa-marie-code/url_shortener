@@ -103,8 +103,13 @@ hr {
   background-color: var(--primary-hover);
 }
 /* footer */
+.footer *{
+  color: #fff;
+}
 .footer{
-   background-color: var(--footer-background);
+  background-color: var(--footer-background);
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .footer h3{
     margin: 0;
@@ -163,4 +168,15 @@ hr {
   hr{
     display: none;
   }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer *{
+    margin-top: 10px;
+  }
+ .footer img{
+  color: #fff;
+ }
 }

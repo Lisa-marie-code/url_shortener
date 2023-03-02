@@ -54,8 +54,8 @@ function App() {
       </div>
      <Boost/>
       <div className="footer">
-        <Logo />
-        <Footer
+        <Logo id="logo-white"/>
+        <Footer 
           title="Features"
           desc1="Link Shortening"
           desc2="Branded Links"
@@ -73,10 +73,12 @@ function App() {
           desc2="Careers"
           desc3="Contact"
         />
-        <Media img={facebook} />
+       <div className="media-icon">
+       <Media img={facebook} />
         <Media img={twitter} />
         <Media img={pinterest} />
         <Media img={instagram} />
+       </div>
       </div>
     </div>
   );

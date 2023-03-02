@@ -61,11 +61,12 @@ section {
   justify-content: space-between;
 }
 
-
-
 .short_link {
   color: var(--primary-color);
   padding-left: 35rem;
+}
+.new-div{
+  background-color: black;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {

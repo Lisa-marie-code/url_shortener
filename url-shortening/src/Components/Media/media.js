@@ -1,13 +1,12 @@
 import React from "react";
-import ".//media.css"
+import ".//media.css";
 
-
-export function Media(props){
-   return(
-    <div>
-    <img className="media-icon" src={props.img} alt="icon-media"></img>
-</div>
-   )
+export function Media(props) {
+  return (
+    <div id="media-icon" >
+      <img  src={props.img} alt="icon-media"></img>
+    </div>
+  );
 }
-   
+
 export default Media;
