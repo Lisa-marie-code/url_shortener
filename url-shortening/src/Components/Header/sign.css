@@ -10,6 +10,7 @@
     margin-left: 20px;
     padding: 10px;
     color: var(--text-color);
+   
 }
 .sign a:hover{
     color: var(--footer-background);
