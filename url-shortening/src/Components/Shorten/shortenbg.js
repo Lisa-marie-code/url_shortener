@@ -1,4 +1,5 @@
 import React from "react";
+import "../Link/link.css"
 
 
 export const ShortenBackground = ({ results, handleCopy, copyText }) =>{
@@ -9,7 +10,7 @@ export const ShortenBackground = ({ results, handleCopy, copyText }) =>{
             <div key={index} className="results-display">
               <section>
                 <p>{res.original_link}</p>{" "}
-                <hr></hr>
+                <hr className="short-hr"></hr>
                 <p className="short_link">{res.full_short_link}</p>
                 <button
                   className="copy_button"

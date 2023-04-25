@@ -1,29 +1,41 @@
-@import url('.//../App/App.css');
-nav{
-    /* display: flex; */
-  /* justify-content: space-around; */
-  display: grid;
-  grid-template-columns: .3fr .2fr .2fr .5fr 1fr ;
- padding-left: 5rem;
- padding-bottom: 5rem;
-
-
+@import url(".//../App/App.css");
+nav {
+  display: flex;
+  justify-content: space-around;
+  /* display: grid; */
+  /* grid-template-columns: .3fr .2fr .2fr .5fr 1fr ; */
+  /* padding-left: 2rem; */
+  padding-bottom: 5rem;
 }
-.links{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: var(--text-color);
+.links {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
 }
-a.links:hover{
-    color: var(--footer-background);
+a.links:hover {
+  color: var(--footer-background);
+}
+.menu {
+  display: none;
 }
 
-@media screen and (min-width: 320px) and (max-width:480px){
-    nav a{
-      display: none;
-    }
-    a.links{
-        display: none;
-    }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    padding-left: 1rem;
+  }
+  nav a {
+    display: none;
+  }
+  a.links {
+    display: none;
+  }
+  .menu {
+    display: block;
+  
+
+   
+
+  }
+ 
 }

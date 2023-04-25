@@ -1,10 +1,10 @@
 import React from "react";
-import ".//media.css";
+import "./media.css";
 
 export function Media(props) {
   return (
     <div id="media-icon" >
-      <img  src={props.img} alt="icon-media"></img>
+      <img className="footer-img" src={props.img} alt="icon-media"></img>
     </div>
   );
 }

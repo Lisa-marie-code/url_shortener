@@ -3,7 +3,7 @@
 .form-space {
   padding: 16px 32px;
   width: 760px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
 }
 .form-background {
@@ -11,17 +11,19 @@
   padding: 52px 64px;
   background-image: url("../../../public/images/bg-shorten-desktop.svg");
   background-color: var(--booster-background);
-  /* z-index: 1; */
-  /* transform: translate(-.1rem, 14ex); */
+  z-index: 1;
   border-radius: 10px;
-  margin: auto;
+  position: absolute;
+  top: 690px;
+  margin-left: 110px;
 }
+
 button {
   padding: 17px 40px;
   background-color: var(--primary-color);
   color: var(--header-background);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-weight: 700;
   margin-left: 24px;
   cursor: pointer;
@@ -35,7 +37,7 @@ button:hover {
 }
 .copy_button {
   text-align: center;
-  padding: 10px 30px;
+
 }
 .copy_button:focus {
   background-color: var(--booster-background);
@@ -47,7 +49,7 @@ section {
   background-color: var(--header-background);
   width: 1060px;
   margin: auto;
-  margin-top: 16px;
+  margin-top: 15px;
   z-index: 1;
   border-radius: 10px;
   padding: 18px 32px;
@@ -56,12 +58,10 @@ section {
   flex-direction: row;
   justify-content: space-between;
 }
-hr{
-  display: none;
-}
-.results-display {
-  max-height: auto;
-}
+
+
+
+
 
 .short_link {
   color: var(--primary-color);
@@ -77,13 +77,18 @@ hr{
 .has-error {
   border: 2px solid red;
 }
+.short-hr{
+  display: none;
+}
+
+
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .form-background {
     width: 250px;
-    left: 2.5rem;
     padding: 24px;
-    margin-top: 110px;
+    margin-left: 39.5px;
+    margin-top: 42px;
   }
 
   .form-space {
@@ -100,6 +105,7 @@ hr{
   section {
     width: 240px;
     display: block;
+ 
   }
   hr{
     display: block;

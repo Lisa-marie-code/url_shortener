@@ -7,7 +7,6 @@ import { Footer } from "../Footer/footer";
 import { Media } from "../Media/media";
 import { LargeText } from "../Maintext/maintext";
 import { Boost } from "../Maintext/boostext";
-import { ShortenBackground } from "../Shorten/shortenbg";
 import rec from "../../images/icon-brand-recognition.svg";
 import det from "../../images/icon-detailed-records.svg";
 import cus from "../../images/icon-fully-customizable.svg";
@@ -15,6 +14,7 @@ import facebook from "../../images/icon-facebook.svg";
 import twitter from "../../images/icon-twitter.svg";
 import pinterest from "../../images/icon-pinterest.svg";
 import instagram from "../../images/icon-instagram.svg";
+
 
 import Logo from "../Header/logo";
 
@@ -24,19 +24,20 @@ function App() {
       <div className="shortly_header">
         <Header />
         <LargeText />
-        <Link />
+      
       </div>
       <div className="statistics">
-      <ShortenBackground />
+      <Link />
+       
+
         <h2>Advanced Statistics</h2>
         <h4>
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </h4>
-        <div className="hr-div">
+
         <hr className="card-hr"></hr>
-        </div>
-       
+
         <div className="card-wrapper">
           <Card
             img={rec}
@@ -77,7 +78,7 @@ function App() {
           desc2="Careers"
           desc3="Contact"
         />
-        <div className="media-icon">
+        <div id="media-icon">
           <Media img={facebook} />
           <Media img={twitter} />
           <Media img={pinterest} />

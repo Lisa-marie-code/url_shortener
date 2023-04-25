@@ -2,7 +2,8 @@ import React from "react";
 import Logo from "./logo";
 import "../Header/header.css";
 import Sign from "./sign";
-
+import Menu from "../Header/hamburger";
+import menu from "../../images/icons8-menu-24.png";
 
 export function Header() {
   const navPages = ["Features", "Pricing", "Resources"];
@@ -13,11 +14,12 @@ export function Header() {
       </a>
     );
   });
+  
   return (
     <nav>
       <Logo />
       {navLinks}
-
+      <Menu img={menu} />
       <Sign />
     </nav>
   );

@@ -1,55 +1,57 @@
-@import url('.//../App/App.css');
-.card-wrapper{
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-    padding-bottom: 5rem;
+@import url(".//../App/App.css");
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
 }
-.card:nth-child(2){
-    margin-top: 30px;
-
+.card:nth-child(2) {
+  margin-top: 30px;
 }
-.card:nth-child(3){
-    margin-top: 60px;
+.card:nth-child(3) {
+  margin-top: 60px;
 }
-.card-body{
-    background-color:var(--header-background);
-    width: 350px;
-    border-radius: 5px;
-    margin-left: 30px;
-    position: relative;
-    padding: 20px;
+.card-body {
+  background-color: var(--header-background);
+  width: 350px;
+  border-radius: 5px;
+  margin-left: 30px;
+  position: relative;
+  padding: 20px;
 }
-.icon{
-    background-color:var(--booster-background);
-    padding: 10px;
-    border-radius:50%;
-    width: 40px;
-    position: absolute;
-    transform: translate(20px, -50px);
+.icon {
+  background-color: var(--booster-background);
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  position: absolute;
+  transform: translate(20px, -50px);
 }
-.card .card-title{
-    text-align: left;
+.card-title {
+font-size: 22px;
+font-weight: 600;
 }
-
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-.card-wrapper{
+  .card-wrapper {
     flex-direction: column;
-}
-.card-body{
-    width: 275px;
-}
-
-.icon{
-width: 50px;
-transform: translate(-40px, -50px);
-
-}
-.card:nth-child(2){
-    margin-top: 60px;
-}
-.card-wrapper{
     text-align: center;
-}
+  }
+  .card-body {
+    width: 275px;
+  }
+
+  .icon {
+    width: 50px;
+    transform: translate(-40px, -50px);
+  }
+  .card:nth-child(2) {
+    margin-top: 60px;
+  }
+  .card-title {
+    text-align: center;
+    }
+    .description{
+      text-align: center;
+    }
 }
