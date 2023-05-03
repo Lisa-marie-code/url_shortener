@@ -14,8 +14,8 @@
   z-index: 1;
   border-radius: 10px;
   position: absolute;
-  top: 690px;
-  margin-left: 110px;
+  top: 660px;
+  margin-left: 10rem;
 }
 
 button {
@@ -60,9 +60,6 @@ section {
 }
 
 
-
-
-
 .short_link {
   color: var(--primary-color);
   padding-left: 35rem;
@@ -88,7 +85,7 @@ section {
     width: 250px;
     padding: 24px;
     margin-left: 39.5px;
-    margin-top: 42px;
+    margin-top: 7.5rem;
   }
 
   .form-space {

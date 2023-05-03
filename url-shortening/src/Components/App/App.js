@@ -15,7 +15,6 @@ import twitter from "../../images/icon-twitter.svg";
 import pinterest from "../../images/icon-pinterest.svg";
 import instagram from "../../images/icon-instagram.svg";
 
-
 import Logo from "../Header/logo";
 
 function App() {
@@ -24,11 +23,10 @@ function App() {
       <div className="shortly_header">
         <Header />
         <LargeText />
-      
       </div>
       <div className="statistics">
-      <Link />
-       
+        <p className="hide-text">Shorten</p>
+        <Link />
 
         <h2>Advanced Statistics</h2>
         <h4>

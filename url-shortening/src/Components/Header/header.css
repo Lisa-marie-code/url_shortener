@@ -7,11 +7,14 @@ nav {
   /* padding-left: 2rem; */
   padding-bottom: 5rem;
 }
+
 .links {
   text-decoration: none;
   display: flex;
   align-items: center;
   color: var(--text-color);
+
+
 }
 a.links:hover {
   color: var(--footer-background);
