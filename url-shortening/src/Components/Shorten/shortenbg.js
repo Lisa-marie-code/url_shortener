@@ -9,7 +9,7 @@ export const ShortenBackground = ({ results, handleCopy, copyText }) =>{
           results.map((res, index) => (
             <div key={index} className="results-display">
               <section>
-                <p>{res.original_link}</p>{" "}
+                <p className="input-link">{res.original_link}</p>{" "}
                 <hr className="short-hr"></hr>
                 <p className="short_link">{res.full_short_link}</p>
                 <button

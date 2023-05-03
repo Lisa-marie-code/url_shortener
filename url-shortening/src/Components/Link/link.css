@@ -62,7 +62,11 @@ section {
 
 .short_link {
   color: var(--primary-color);
-  padding-left: 35rem;
+  padding-left: 30rem;
+  word-break: break-all;
+}
+.input-link{
+    word-break: break-all;
 }
 .new-div {
   background-color: black;
