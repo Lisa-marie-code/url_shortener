@@ -29,7 +29,7 @@ body {
   text-decoration: none;
   color: var(--header-background);
   border-radius: 28px;
-  margin-left: 8rem;
+  margin-left: 10rem;
  
 
 
@@ -39,12 +39,12 @@ body {
 }
 .flex-text h3 {
   width: 500px;
-  margin: 0 0 3rem 8rem;
+  margin: 0 0 3rem 10rem;
 
 }
 .large-text {
   font-size: 80px;
-  margin-left: 8rem;
+  margin-left: 10rem;
   line-height: 1;
 }
 .worker-img {
