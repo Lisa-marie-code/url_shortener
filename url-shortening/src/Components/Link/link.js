@@ -12,17 +12,16 @@ export function Link() {
     event.preventDefault();
     setInputValue("");
     console.log(inputValue);
-  
+
     if (inputValue === "") {
       setError("Please add a link");
+    } else if (!inputValue.endsWith(".com") && !inputValue.endsWith(".org")) {
+      setError("Invalid URL. Please provide a valid suffix (.com, .org, etc.)");
     } else {
-      let url = inputValue;
-      if (!url.endsWith(".com") && !url.endsWith(".org")) {
-        url += ".com";
-      }
-  
       const shortenLink = async () => {
-        const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
+        const res = await fetch(
+          `https://api.shrtco.de/v2/shorten?url=${inputValue}`
+        );
         const data = await res.json();
         console.log(data);
         setResults(results.concat(data.result));
@@ -31,7 +30,6 @@ export function Link() {
       setError(null);
     }
   };
-  
 
   const handleCopy = (index) => {
     navigator.clipboard.writeText(results[index].full_short_link);

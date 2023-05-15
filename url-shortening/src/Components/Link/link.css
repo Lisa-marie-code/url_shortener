@@ -48,8 +48,7 @@ button:hover {
 section {
   background-color: var(--header-background);
   width: 1000px;
-  margin: auto;
-  margin-top: 15px;
+  margin: 15px 0 0 160px;
   z-index: 1;
   border-radius: 10px;
   padding: 18px 64px;
@@ -71,13 +70,14 @@ section {
 .new-div {
   background-color: black;
 }
-.error-message {
+.error-message,.invalid-url{
   color: red;
   margin: 0;
 }
 .has-error {
   border: 2px solid red;
 }
+
 .short-hr{
   display: none;
 }
