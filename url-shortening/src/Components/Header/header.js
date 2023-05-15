@@ -19,7 +19,7 @@ export function Header() {
     <nav>
       <Logo />
       {navLinks}
-      <Menu className = "hamburger" img={menu} />
+      <Menu img={menu} />
       <Sign />
     </nav>
   );
