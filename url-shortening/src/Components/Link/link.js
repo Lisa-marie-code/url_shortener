@@ -21,19 +21,15 @@ export function Link() {
   }, []);
 
  
-  useEffect(() => {
-    localStorage.setItem("shortenedLinks", JSON.stringify(results));
-  }, [results]);
+  // useEffect(() => {
+  //   localStorage.setItem("shortenedLinks", JSON.stringify(results));
+  // }, [results]);
 
 
 
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setInputValue("");
-    console.log(inputValue);
-
-
     if (inputValue === "") {
       setError("Please add a link");
     } else if (!inputValue.endsWith(".com") && !inputValue.endsWith(".org")) {
@@ -44,16 +40,13 @@ export function Link() {
           `https://api.shrtco.de/v2/shorten?url=${inputValue}`
         );
         const data = await res.json();
-        console.log(data);
-        
-
-
         setResults(results.concat(data.result));
       };
-      
       shortenLink();
       setError(null);
     }
+    localStorage.setItem("shortenedLinks", JSON.stringify(results));
+    setInputValue("");
   };
 
 
