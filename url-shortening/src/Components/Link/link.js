@@ -14,7 +14,7 @@ export function Link() {
 
  
   useEffect(() => {
-    const savedResults = sessionStorage.getItem("shortenedLinks");
+    const savedResults = localStorage.getItem("shortenedLinks");
     if (savedResults) {
       setResults(JSON.parse(savedResults));
     }
@@ -22,7 +22,7 @@ export function Link() {
 
  
   useEffect(() => {
-    sessionStorage.setItem("shortenedLinks", JSON.stringify(results));
+    localStorage.setItem("shortenedLinks", JSON.stringify(results));
   }, [results]);
 
 
