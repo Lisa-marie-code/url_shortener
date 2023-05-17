@@ -1,17 +1,38 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "../Link/link.css";
 import ShortenBackground from "../Shorten/shortenbg";
 
+
+
+
+
 export function Link() {
   const [inputValue, setInputValue] = useState("");
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState([])
   const [copyText, setCopyText] = useState("Copy");
   const [error, setError] = useState("");
+
+ 
+  useEffect(() => {
+    const savedResults = sessionStorage.getItem("shortenedLinks");
+    if (savedResults) {
+      setResults(JSON.parse(savedResults));
+    }
+  }, []);
+
+ 
+  useEffect(() => {
+    sessionStorage.setItem("shortenedLinks", JSON.stringify(results));
+  }, [results]);
+
+
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setInputValue("");
     console.log(inputValue);
+
 
     if (inputValue === "") {
       setError("Please add a link");
@@ -24,17 +45,23 @@ export function Link() {
         );
         const data = await res.json();
         console.log(data);
+        
+
+
         setResults(results.concat(data.result));
       };
+      
       shortenLink();
       setError(null);
     }
   };
 
+
   const handleCopy = (index) => {
     navigator.clipboard.writeText(results[index].full_short_link);
     setCopyText("Copied");
   };
+  
 
   return (
     <div>
