@@ -14,19 +14,16 @@ export function Link() {
 
  
   useEffect(() => {
-    const savedResults = localStorage.getItem("shortenedLinks");
-    if (savedResults) {
-      setResults(JSON.parse(savedResults));
-    }
+    init();
   }, []);
 
- 
-  // useEffect(() => {
-  //   localStorage.setItem("shortenedLinks", JSON.stringify(results));
-  // }, [results]);
-
-
-
+ async function init(){
+    const savedResults = localStorage.getItem("shortenedLinks");
+    if (savedResults) {
+      const data  = await JSON.parse(savedResults);
+      setResults(data);
+    }
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -41,11 +38,11 @@ export function Link() {
         );
         const data = await res.json();
         setResults(results.concat(data.result));
+        localStorage.setItem("shortenedLinks", JSON.stringify(results.concat(data.result)));
       };
       shortenLink();
       setError(null);
     }
-    localStorage.setItem("shortenedLinks", JSON.stringify(results));
     setInputValue("");
   };
 
